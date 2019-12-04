@@ -16,7 +16,7 @@ def sigma_metropolis(x_data, N=10**5, delta=1.0):
     lista = [np.random.random()]
 
     for i in range(1,N):
-        propuesta  = lista[i-1] + (np.random.random())*delta
+        propuesta  = lista[i-1] + (np.random.random()-0.5)*delta
         r = min(1, likelihood(propuesta, x_data)/likelihood(lista[i-1], x_data))
         gamma = np.random.random()
         if(gamma < r):
