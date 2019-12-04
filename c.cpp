@@ -8,6 +8,7 @@ void print(double *psi, int n_x);
 void copy(double *recibe, double *entrega, int n_x);
 void evolve(double *psi_new, double *psi_old, double delta_t, double delta_x, int n_x);
 
+
 int main(){
   double *psi = NULL;
   double *psi_past = NULL;
